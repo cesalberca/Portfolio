@@ -10,7 +10,6 @@
 @import 'base/base.css';
 @import 'base/fonts.css';
 @import 'base/typography.css';
-@import 'base/helpers.css';
 
 /*4. Layout-related sections*/
 @import 'layout/header.css';
@@ -21,6 +20,3 @@
 
 /*6. Page-specific styles*/
 @import 'pages/index.css';
-
-/*7. Themes*/
-@import 'themes/default.css';
