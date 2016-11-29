@@ -4,6 +4,7 @@
   "description": "Personal portfolio for César Alberca",
   "main": "src/js/index.js",
   "scripts": {
+    "start": "./node_modules/.bin/browser-sync start --server \"src\" --files \"src\"",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -21,5 +22,8 @@
   "bugs": {
     "url": "https://github.com/cesalberca/Portfolio/issues"
   },
-  "homepage": "https://github.com/cesalberca/Portfolio#readme"
+  "homepage": "https://github.com/cesalberca/Portfolio#readme",
+  "devDependencies": {
+    "browser-sync": "^2.18.2"
+  }
 }
