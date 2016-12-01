@@ -10,29 +10,31 @@
 }
 
 .grid {
+    width: 100%;
+    height: 100%;
     display: flex;
-    flex-flow: wrap;
+    flex-direction: column;
 }
 
-.row {
+.grid__row {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
 }
 
-.box {
+.grid__box {
     position: relative;
-    background-color: red;
     width: 50%;
+    border: 1px solid red;
 }
 
-.box:before {
+.grid__box:before {
     content: "";
     display: block;
     padding-top: 100%;
 }
 
-.box > .content {
+.grid__box__content {
     position: absolute;
     top: 0;
     left: 0;
@@ -42,6 +44,12 @@
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
 }
 
 *[class^="col"] {
