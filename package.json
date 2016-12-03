@@ -4,7 +4,7 @@
   "description": "Personal portfolio for César Alberca",
   "main": "src/js/index.js",
   "scripts": {
-    "start": "./node_modules/.bin/browser-sync start --server \"src\" --files \"src\"",
+    "start": "./node_modules/.bin/browser-sync start --server \"src\" --files \"src\" --no-inject-changes",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
