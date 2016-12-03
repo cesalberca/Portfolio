@@ -13,19 +13,22 @@
 .grid__row {
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
 
     flex: 1;
 }
 
-/*Grids dentro de grids necesario el poner en distintas filas, no columnas*/
-.grid__row > .grid__row {
+.grid__row--horizontal {
     flex-direction: column;
 }
 
-/*.grid__row > *:not(*[class="grid__row"]) {
-    padding: var(--gutter);
-}*/
+/*Grids dentro de grids necesario el poner en distintas filas, no columnas*/
+.grid__row--vertical {
+    flex-direction: row;
+}
+
+.grid__box  {
+    margin: var(--gutter);
+}
 
 .grid__box {
     position: relative;
