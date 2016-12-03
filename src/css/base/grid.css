@@ -26,11 +26,8 @@
     flex-direction: row;
 }
 
-.grid__box  {
-    margin: var(--gutter);
-}
-
 .grid__box {
+    margin: var(--gutter);
     position: relative;
     flex: 1;
 }
