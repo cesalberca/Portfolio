@@ -1,3 +1,9 @@
+:root {
+    --columns: 6;
+    --gutter: 2px;
+    --container-width: 38rem;
+}
+
 .container {
     margin: 0 auto;
     min-height: 100vh;
@@ -20,7 +26,6 @@
     width: 100%;
 }
 
-/*Grids dentro de grids necesario el poner en distintas filas, no columnas*/
 .grid__row--vertical {
     flex-direction: row;
     width: 100%;
@@ -30,6 +35,10 @@
     margin: var(--gutter);
     position: relative;
     flex: 1;
+}
+
+.grid__row--no-gutter > .grid__box {
+    margin: 0;
 }
 
 .grid__box:before {
