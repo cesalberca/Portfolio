@@ -17,6 +17,7 @@
 
 /*5. Components*/
 @import 'components/button.css';
+@import 'components/project-frame.css';
 
 /*6. Page-specific styles*/
 @import 'pages/index.css';
