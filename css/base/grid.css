@@ -1,29 +1,29 @@
 .container {
     margin: 0 auto;
+    min-height: 100vh;
     max-width: var(--container-width);
 }
 
 .grid {
-    width: 100%;
-    height: 100%;
     display: flex;
     flex-direction: column;
 }
 
 .grid__row {
     display: flex;
-    flex-direction: row;
-
-    flex: 1;
+    height: 100%;
 }
 
 .grid__row--horizontal {
     flex-direction: column;
+    height: 100%;
+    width: 100%;
 }
 
 /*Grids dentro de grids necesario el poner en distintas filas, no columnas*/
 .grid__row--vertical {
     flex-direction: row;
+    width: 100%;
 }
 
 .grid__box {
@@ -36,6 +36,11 @@
     content: "";
     display: block;
     padding-top: 100%;
+}
+
+/*Necesitamos resetear el padding-top de los elementos dentro de un .grid__row--horizontal para que sus hijos se ajusten a la caja padre*/
+.grid__row--horizontal > .grid__box:before {
+    padding-top: 0%;
 }
 
 .grid__box__content {
