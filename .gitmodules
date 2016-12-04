@@ -1,0 +1,3 @@
+[submodule "src/projects/DailyPlanner"]
+	path = src/projects/DailyPlanner
+	url = https://github.com/cesalberca/DailyPlanner.git
