@@ -1,6 +1,6 @@
 :root {
     --columns: 6;
-    --gutter: 2px;
+    --gutter: 5px;
     --container-width: 38rem;
 }
 
@@ -10,6 +10,7 @@
     max-width: var(--container-width);
 }
 
+/*Grid box*/
 .grid {
     display: flex;
     flex-direction: column;
@@ -22,13 +23,10 @@
 
 .grid__row--horizontal {
     flex-direction: column;
-    height: 100%;
-    width: 100%;
 }
 
 .grid__row--vertical {
     flex-direction: row;
-    width: 100%;
 }
 
 .grid__box {
@@ -37,10 +35,12 @@
     flex: 1;
 }
 
+/*Quitamos el margin a los elementos hijos*/
 .grid__row--no-gutter > .grid__box {
     margin: 0;
 }
 
+/*Esto hace que se generen los elementos manteniendo un ratio aspecto de 1:1*/
 .grid__box:before {
     content: "";
     display: block;
@@ -52,6 +52,7 @@
     padding-top: 0%;
 }
 
+/*Debido a que aplicamos un padding-top al elemento padre tenemos que resetear la posición del contenido para que no tenga en cuenta ese padding-top*/
 .grid__box__content {
     position: absolute;
     top: 0;
@@ -59,13 +60,10 @@
     right: 0;
     bottom: 0;
 
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
     border: 1px solid red;
 }
 
+/*Grid normal*/
 .row {
     display: flex;
     flex-direction: row;
