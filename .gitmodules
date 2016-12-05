@@ -1,3 +1,6 @@
 [submodule "src/projects/DailyPlanner"]
 	path = src/projects/DailyPlanner
 	url = https://github.com/cesalberca/DailyPlanner.git
+[submodule "src/projects/cesalberca.github.io"]
+	path = src/projects/cesalberca.github.io
+	url = https://github.com/cesalberca/cesalberca.github.io
