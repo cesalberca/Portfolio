@@ -34,7 +34,7 @@
 
 .project-frame__meta:hover + .project-frame__iframe {
     transform-origin: top left;
-    transform: rotate(-15deg) scale(0.35);
+    /*transform: rotate(-15deg) scale(0.35);*/
 }
 
 .project-frame__iframe {
@@ -48,6 +48,7 @@
     transform: scale(0.25);
     overflow: hidden;
 
+    background-color: white;
     transition: 0.25s ease all;
 }
 
