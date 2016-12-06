@@ -1,6 +1,6 @@
 :root {
     --columns: 6;
-    --gutter: 5px;
+    --gutter: 0;
     --container-width: 38rem;
 }
 
@@ -60,6 +60,7 @@
     right: 0;
     bottom: 0;
 
+    /*Facilita debuggear*/
     border: 1px solid red;
 }
 
