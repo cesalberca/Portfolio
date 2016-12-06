@@ -50,3 +50,7 @@
 
     transition: 0.25s ease all;
 }
+
+.project-frame img {
+    object-fit: cover;
+}
