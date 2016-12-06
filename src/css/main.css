@@ -9,6 +9,7 @@
 /*3. Base stuff*/
 @import 'base/base.css';
 @import 'base/colores.css';
+@import 'base/sombras.css';
 @import 'base/grid.css';
 @import 'base/typography.css';
 
@@ -18,6 +19,7 @@
 
 /*5. Components*/
 @import 'components/button.css';
+@import 'components/hero.css';
 @import 'components/project-frame.css';
 
 /*6. Page-specific styles*/
