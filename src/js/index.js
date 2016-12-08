@@ -35,6 +35,19 @@
                 scrollTo(elementToScrollTo, 0, 500)
             })
         })
+
+        let projects = document.querySelectorAll('[data-project-src]')
+        let projectShowcase = document.querySelector('#project-showcase')
+        let myDescription = document.querySelector('#my-description')
+
+        projects.forEach(function (project) {
+            project.addEventListener('click', function () {
+                let url = `${window.location}projects/${project.dataset.projectSrc}`
+                console.log(url)
+                myDescription.style.display = 'none'
+                projectShowcase.src = url
+            })
+        })
     }
 
     window.onload = init
