@@ -32,12 +32,12 @@
     background-color: rgba(255, 255, 255, 0.1)
 }
 
-.project-frame__meta:hover + .project-frame__iframe {
+.project-frame__meta:hover + .project-frame__media {
     transform-origin: top left;
     /*transform: rotate(-15deg) scale(0.35);*/
 }
 
-.project-frame__iframe {
+.project-frame__media {
     border: 0;
     position: absolute;
     top: 0;
@@ -54,4 +54,5 @@
 
 .project-frame img {
     object-fit: cover;
+    object-position: 0 0;
 }
