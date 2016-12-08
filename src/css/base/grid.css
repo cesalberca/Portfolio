@@ -1,6 +1,6 @@
 :root {
     --columns: 6;
-    --gutter: 0;
+    --gutter: 5px;
     --container-width: 38rem;
 }
 
@@ -37,6 +37,15 @@
 /*Quitamos el margin a los elementos hijos*/
 .grid__row--no-gutter > .grid__box {
     margin: 0;
+}
+
+.grid__row--gutter-in-between > .grid__box {
+    margin: 0 0 var(--gutter) 0;
+}
+
+.grid__row--gutter-in-between > .grid__box:last-child {
+    margin-top: var(--gutter);
+    margin-bottom: 0; 
 }
 
 /*Esto hace que se generen los elementos manteniendo un ratio aspecto de 1:1*/
