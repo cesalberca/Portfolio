@@ -1,6 +1,8 @@
 :root {
     --primary-color: #1164A8;
     --accent-color: hsla(48, 100%, 58%, 1);
+    --info-color: hsla(0, 0%, 65%, 1);
+    --info-color--hover: hsla(0, 0%, 75%, 1);
 }
 
 body {
