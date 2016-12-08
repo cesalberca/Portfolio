@@ -1,11 +1,12 @@
 :root {
-    --primary: #1164A8;
+    --primary-color: #1164A8;
+    --accent-color: hsla(48, 100%, 58%, 1);
 }
 
 body {
-    background-color: var(--primary);
+    background-color: var(--primary-color);
 }
 
 .background-color--primary {
-    background-color: var(--primary);
+    background-color: var(--primary-color);
 }
