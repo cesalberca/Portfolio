@@ -13,10 +13,12 @@ body {
 
 a {
   text-decoration: none;
+  color: var(--accent-color);
+  transition: 0.25s ease all;
 }
 
 a:hover {
-  
+  color: var(--accent-color--hover);
 }
 
 strong {
