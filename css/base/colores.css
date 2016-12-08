@@ -12,3 +12,7 @@ body {
 .background-color--primary {
     background-color: var(--primary-color);
 }
+
+.text-color--primary {
+    color: var(--primary-color);
+}
