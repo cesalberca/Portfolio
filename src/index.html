@@ -6,6 +6,7 @@
         <title>Portfolio - César Alberca</title>
         <meta name="description" content="Personal portfolio for César Alberca">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <base href="" target="_blank">
 
         <link rel="apple-touch-icon" href="apple-touch-icon.png">
         <link rel='shortcut icon' type='image/x-icon' href='/favicon.ico' />
@@ -16,150 +17,163 @@
         <!--[if lte IE 9]>
             <p class="browserupgrade">Estás usando un navegador <strong>desactualizado</strong>. Por favor <a href="http://browsehappy.com/">actualizar tu navegador</a> para mejorar la experiencia de navegación y la seguridad.</p>
         <![endif]-->
-        <section class="hero">
-            <div class="container">
-                <p>Me llamo <strong>César Alberca</strong> y soy un <strong>front end developer</strong>. Soy alguien <em>apasionado</em>, <em>entusiasta</em> y <em>autodidacta.</em></p>
-            </div>
-        </section>
-
-        <section class="container background-color--primary">
-            <h1 class="text-color--primary text-shadow--5">Mis proyectos</h1>
-            <div class="grid">
-                <div class="grid__row">
-                    <div class="grid__box box-shadow--5">
-                        <div class="grid__box__content">
-                            <div class="project-frame">
-                                <div class="project-frame__meta">
-                                    <a class="project-frame__link" data-scroll-top>
-                                        <h4 class="project-frame__title text-shadow--5">DailyPlanner</h4>
-                                    </a>
-                                    <div class="project-frame__tags">
-                                        <span class="tag">Javascript</span>
-                                        <span class="tag">Drag and drop</span>
-                                    </div>
-                                </div>
-                                <img class="project-frame__media" src="./img/dailyPlanner-hero.png"/>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="grid__box box-shadow--5">
-                        <div class="grid__box__content">
-                            <div class="project-frame">
-                                <div class="project-frame__meta">
-                                    <a class="project-frame__link" data-scroll-top>
-                                        <h4 class="project-frame__title text-shadow--5">Arkanoid</h4>
-                                    </a>
-                                    <div class="project-frame__tags">
-                                        <span class="tag">Javascript</span>
-                                        <span class="tag">Canvas</span>
-                                    </div>
-                                </div>
-                                <img class="project-frame__media" src="./img/arkanoid-hero.png"/>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="grid__box box-shadow--5">
-                        <div class="grid__box__content">
-                            <div class="project-frame">
-                                <div class="project-frame__meta">
-                                    <a class="project-frame__link" data-scroll-top>
-                                        <h4 class="project-frame__title text-shadow--5">Blog de ciencia</h4>
-                                    </a>
-                                    <div class="project-frame__tags">
-                                        <span class="tag">Html</span>
-                                        <span class="tag">Css</span>
-                                    </div>
-                                </div>
-                                <img class="project-frame__media project-frame__media--centered" src="./img/blog-ciencia-hero.png"/>
-                            </div>
-                        </div>
-                    </div>
+        <iframe id="project-showcase" frameborder="0"></iframe>
+        
+        <main class="wrapper">
+            <section class="hero">
+                <div class="container">
+                    <p id="my-description">Me llamo <strong>César Alberca</strong> y soy un <strong>front end developer</strong>. Soy alguien <em>apasionado</em>, <em>entusiasta</em> y <em>autodidacta.</em></p>
                 </div>
-
-                <div class="grid__row">
-                    <div class="grid__box box-shadow--5">
-                        <div class="grid__box__content">
-                            <div class="project-frame">
-                                <div class="project-frame__meta">
-                                    <a class="project-frame__link" data-scroll-top>
-                                        <h4 class="project-frame__title text-shadow--5">Star generator</h4>
-                                    </a>
-                                    <div class="project-frame__tags">
-                                        <span class="tag">Javascript</span>
-                                        <span class="tag">Canvas</span>
+            </section>
+            
+            <section class="container background-color--primary">
+                <h1 class="text-color--primary text-shadow--5">Mis proyectos</h1>
+                <div class="grid">
+                    <div class="grid__row">
+                        <div class="grid__box box-shadow--5">
+                            <div class="grid__box__content">
+                                <div class="project-frame">
+                                    <div class="project-frame__meta">
+                                        <a class="project-frame__link" data-scroll-top data-project-src="DailyPlanner/src/index.html">
+                                            <h4 class="project-frame__title text-shadow--5">DailyPlanner</h4>
+                                        </a>
+                                        <div class="project-frame__tags">
+                                            <span class="tag">Javascript</span>
+                                            <span class="tag">Drag and drop</span>
+                                        </div>
                                     </div>
+                                    <img class="project-frame__media" src="./img/dailyPlanner-hero.png"/>
                                 </div>
-                                <iframe class="project-frame__media project-frame__media--2x" scrolling="no" src="./projects/star-generator/index.html" frameborder="0"></iframe>
+                            </div>
+                        </div>
+                        <div class="grid__box box-shadow--5">
+                            <div class="grid__box__content">
+                                <div class="project-frame">
+                                    <div class="project-frame__meta">
+                                        <a class="project-frame__link" data-scroll-top data-project-src="Arkanoid/index.html">
+                                            <h4 class="project-frame__title text-shadow--5">Arkanoid</h4>
+                                        </a>
+                                        <div class="project-frame__tags">
+                                            <span class="tag">Javascript</span>
+                                            <span class="tag">Canvas</span>
+                                        </div>
+                                    </div>
+                                    <img class="project-frame__media" src="./img/arkanoid-hero.png"/>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="grid__box box-shadow--5">
+                            <div class="grid__box__content">
+                                <div class="project-frame">
+                                    <div class="project-frame__meta">
+                                        <a class="project-frame__link" data-scroll-top data-project-src="blog-ciencia/index.html">
+                                            <h4 class="project-frame__title text-shadow--5">Blog de ciencia</h4>
+                                        </a>
+                                        <div class="project-frame__tags">
+                                            <span class="tag">Html</span>
+                                            <span class="tag">Css</span>
+                                        </div>
+                                    </div>
+                                    <img class="project-frame__media project-frame__media--centered" src="./img/blog-ciencia-hero.png"/>
+                                </div>
                             </div>
                         </div>
                     </div>
-
-                    <div class="grid__box">
-                        <div class="grid__box__content">
-                            <div class="grid__row grid__row--horizontal grid__row--gutter-in-between">
-                                <div class="grid__box box-shadow--5">
-                                    <div class="grid__box__content">
-                                        <div class="project-frame">
-                                            <div class="project-frame__meta">
-                                                <a class="project-frame__link" data-scroll-top>
-                                                    <h4 class="project-frame__title text-shadow--5">Delta Wolves</h4>
-                                                </a>
-                                                <div class="project-frame__tags">
-                                                    <span class="tag">Html</span>
-                                                    <span class="tag">Css</span>
-                                                    <span class="tag">Bower</span>
+            
+                    <div class="grid__row">
+                        <div class="grid__box box-shadow--5">
+                            <div class="grid__box__content">
+                                <div class="project-frame">
+                                    <div class="project-frame__meta">
+                                        <a class="project-frame__link" data-scroll-top data-project-src="star-generator/index.html">
+                                            <h4 class="project-frame__title text-shadow--5">Star generator</h4>
+                                        </a>
+                                        <div class="project-frame__tags">
+                                            <span class="tag">Javascript</span>
+                                            <span class="tag">Canvas</span>
+                                        </div>
+                                    </div>
+                                    <iframe class="project-frame__media project-frame__media--2x" scrolling="no" src="./projects/star-generator/index.html" frameborder="0"></iframe>
+                                </div>
+                            </div>
+                        </div>
+            
+                        <div class="grid__box">
+                            <div class="grid__box__content">
+                                <div class="grid__row grid__row--horizontal grid__row--gutter-in-between">
+                                    <div class="grid__box box-shadow--5">
+                                        <div class="grid__box__content">
+                                            <div class="project-frame">
+                                                <div class="project-frame__meta">
+                                                    <a class="project-frame__link" href="http://deltawolves.com"  data-scroll-top>
+                                                        <h4 class="project-frame__title text-shadow--5">Delta Wolves</h4>
+                                                    </a>
+                                                    <div class="project-frame__tags">
+                                                        <span class="tag">Html</span>
+                                                        <span class="tag">Css</span>
+                                                        <span class="tag">Bower</span>
+                                                    </div>
                                                 </div>
+                                                <img class="project-frame__media" src="./img/deltawolves-hero.png"/>
                                             </div>
-                                            <img class="project-frame__media" src="./img/deltawolves-hero.png"/>
+                                        </div>
+                                    </div>
+                                    <div class="grid__box box-shadow--5">
+                                        <div class="grid__box__content">
+                                            <div class="project-frame">
+                                                <div class="project-frame__meta">
+                                                    <a class="project-frame__link" href="http://laminastratamientocristal.es" data-scroll-top>
+                                                        <h4 class="project-frame__title text-shadow--5">LTC</h4>
+                                                    </a>
+                                                    <div class="project-frame__tags">
+                                                        <span class="tag">Html</span>
+                                                        <span class="tag">Css</span>
+                                                        <span class="tag">Bower</span>
+                                                    </div>
+                                                </div>
+                                                <img class="project-frame__media" src="./img/ltc-hero.png"/>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="grid__box box-shadow--5">
-                                    <div class="grid__box__content">
-                                        <div class="project-frame">
-                                            <div class="project-frame__meta">
-                                                <a class="project-frame__link" data-scroll-top>
-                                                    <h4 class="project-frame__title text-shadow--5">LTC</h4>
-                                                </a>
-                                                <div class="project-frame__tags">
-                                                    <span class="tag">Html</span>
-                                                    <span class="tag">Css</span>
-                                                    <span class="tag">Bower</span>
-                                                </div>
-                                            </div>
-                                            <img class="project-frame__media" src="./img/ltc-hero.png"/>
+                            </div>
+                        </div>
+                    </div>
+            
+                    <div class="grid__row">
+                        <div class="grid__box">
+                            <div class="grid__box__content">
+                                <div class="card card--transparent centered">
+                                    <div class="card__content">
+                                        <div><a href="http://github.com/cesalberca">Github</a></div>
+                                        <div><a href="http://codepen.io/cesalberca">Codepen</a></div>
+                                        <div><a href="http://twitter.com/cesalberca">Twitter</a></div>
+                                        <div><a href="mailto:cesalberca@gmail.com">Email</a></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>   
+                        <div class="grid__box box-shadow--5">
+                            <div class="grid__box__content">
+                                <div class="project-frame">
+                                    <div class="project-frame__meta">
+                                        <a class="project-frame__link" href="http://cesalberca.es" data-scroll-top>
+                                            <h4 class="project-frame__title text-shadow--5">Blog</h4>
+                                        </a>
+                                        <div class="project-frame__tags">
+                                            <span class="tag">Html</span>
+                                            <span class="tag">Css</span>
+                                            <span class="tag">Ruby</span>
                                         </div>
                                     </div>
+                                    <img class="project-frame__media project-frame__media--centered" src="./img/cesalberca-hero.png"/>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-
-                <div class="grid__row">
-                    <div class="grid__box">
-                        <div class="grid__box__content"></div>
-                    </div>   
-                    <div class="grid__box box-shadow--5">
-                        <div class="grid__box__content">
-                            <div class="project-frame">
-                                <div class="project-frame__meta">
-                                    <a class="project-frame__link" data-scroll-top>
-                                        <h4 class="project-frame__title text-shadow--5">Blog</h4>
-                                    </a>
-                                    <div class="project-frame__tags">
-                                        <span class="tag">Html</span>
-                                        <span class="tag">Css</span>
-                                        <span class="tag">Ruby</span>
-                                    </div>
-                                </div>
-                                <img class="project-frame__media project-frame__media--centered" src="./img/cesalberca-hero.png"/>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
+            </section>
+        </main>
 
         <!--<div class="typography-grid"></div>-->
 
