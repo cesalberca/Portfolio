@@ -50,9 +50,29 @@
 
     background-color: white;
     transition: 0.25s ease all;
-}
 
-.project-frame img {
     object-fit: cover;
     object-position: 0 0;
+}
+
+.project-frame__media--centered {
+    object-position: 50% 50%;
+}
+
+.project-frame__media--2x {
+    height: 200%;
+    width: 200%;
+    transform: scale(0.5);
+}
+
+.project-frame__tags {
+    position: absolute;
+    bottom: -50%;
+    left: 1%;
+    transition: 0.25s ease all;
+}
+
+.project-frame__link:hover + .project-frame__tags {
+    bottom: 1%;
+    left: 1%;
 }
