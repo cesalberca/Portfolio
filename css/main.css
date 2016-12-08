@@ -2,6 +2,7 @@
 
 /*1. Configuration and helpers*/
 @import 'abstracts/variables.css';
+@import 'abstracts/utils.css';
 
 /*2. Vendors*/
 @import 'vendor/normalize.css';
@@ -21,6 +22,7 @@
 @import 'components/button.css';
 @import 'components/hero.css';
 @import 'components/tag.css';
+@import 'components/card.css';
 @import 'components/project-frame.css';
 
 /*6. Page-specific styles*/
