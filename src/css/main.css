@@ -15,7 +15,7 @@
 @import 'base/typography.css';
 
 /*4. Layout-related sections*/
-@import 'layout/header.css';
+@import 'layout/nav.css';
 @import 'layout/footer.css';
 
 /*5. Components*/
