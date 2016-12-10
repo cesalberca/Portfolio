@@ -42,7 +42,7 @@
 
         projects.forEach(function (project) {
             project.addEventListener('click', function () {
-                let url = `${window.location}projects/${project.dataset.projectSrc}`
+                let url = `${location.origin}/projects/${project.dataset.projectSrc}`
                 console.log(url)
                 myDescription.style.display = 'none'
                 projectShowcase.src = url
