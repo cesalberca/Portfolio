@@ -44,7 +44,6 @@
 
 .project-frame__meta:hover + .project-frame__media {
     transform-origin: top left;
-    /*transform: rotate(-15deg) scale(0.35);*/
 }
 
 .project-frame__media {
