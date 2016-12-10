@@ -20,12 +20,13 @@
         <iframe id="project-showcase" frameborder="0"></iframe>
 
         <nav class="nav box-shadow--1">
-            <a class="nav__links centered" target="_self" href="#">
+            <a class="nav__links centered" target="_self" href="/">
                 <img class="nav__logo" src="./img/logo.gif" alt="Logo César Alberca">
                 <span><strong class="text-color--dark">César Alberca</strong></span>
             </a>
-            <a class="nav__links" href="http://cesalberca.es">Blog</a>
+            <a class="nav__links" target="_self" href="#proyectos">Proyectos</a>
             <a class="nav__links" target="_self" href="#contacto">Contacto</a>
+            <a class="nav__links" href="http://cesalberca.es">Blog</a>
         </nav>
         
         <main class="wrapper">
@@ -37,14 +38,14 @@
             </section>
             
             <section class="container background-color--primary">
-                <h1 class="text-color--primary text-shadow--5">Mis proyectos</h1>
+                <a name="proyectos"><h1 class="text-color--primary text-shadow--5">Mis proyectos</h1></a>
                 <div class="grid">
                     <div class="grid__row">
                         <div class="grid__box box-shadow--5">
                             <div class="grid__box__content">
                                 <div class="project-frame">
                                     <div class="project-frame__meta">
-                                        <a class="project-frame__link" data-scroll-top data-project-src="DailyPlanner/src/index.html">
+                                        <a class="project-frame__link" target="_self" title="DailyPlanner. Agenda para organizar el día usando Javascript y Drag and Drop." data-scroll-top data-project-src="DailyPlanner/src/index.html">
                                             <h4 class="project-frame__title text-shadow--5">DailyPlanner</h4>
                                         </a>
                                         <div class="project-frame__tags">
@@ -257,7 +258,7 @@
 
                         <div class="grid__box">
                             <div class="grid__box__content">
-                                <button class="btn btn--full" data-scroll-top>Volver arriba</button>
+                                <button class="btn btn--full" data-scroll-top>Volver arriba ⬆</button>
                             </div>
                         </div>
                     </div>
