@@ -12,6 +12,23 @@
 
 .nav__links {
     padding: 1rem;
+    position: relative;
+}
+
+.nav__links:not(:first-child):after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 30%;
+    height: 2px;
+    background-color: var(--accent-color);
+    bottom: 0;
+    transition: 0.25s ease all;
+}
+
+.nav__links:hover:after {
+    width: 80%;
+    background-color: var(--accent-color--hover);
 }
 
 .nav__links:first-child {
