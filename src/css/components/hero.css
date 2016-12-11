@@ -19,3 +19,9 @@
 .hero__description {
     color: white;
 }
+
+@media (max-width: 600px) {
+    .hero__title {
+        font-size: 15vh;
+    }
+}

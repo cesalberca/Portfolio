@@ -26,6 +26,17 @@
         return -c/2 * (t*(t-2) - 1) + b
     }
 
+    function resize () {
+        let styles = window.getComputedStyle(document.body)
+        let gutter = styles.getPropertyValue('--gutter')
+        let defaultGutter = gutter.getPropertyValue
+
+        if (window.innerWidth < 800)
+            document.body.style.setProperty('--gutter', '0px')
+        else
+            document.body.style.setProperty('--gutter', defaultGutter)
+    }
+
     function init () {
         let innerLinks = document.querySelectorAll('[data-scroll-to]')
         let elementToScroll = document.body
@@ -55,7 +66,10 @@
                 projectShowcase.src = url
             })
         })
+
+        resize()
     }
 
     window.onload = init
+    window.onresize = resize
 })()

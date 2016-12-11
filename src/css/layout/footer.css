@@ -1,4 +1,5 @@
 .footer {
     max-width: var(--container-width);
     margin: 2rem auto;
+    padding: 0 1rem;
 }
