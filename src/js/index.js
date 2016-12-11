@@ -37,7 +37,7 @@
             document.body.style.setProperty('--gutter', defaultGutter)
     }
 
-    function init () {
+    function addInnerLinksEvents () {
         let innerLinks = document.querySelectorAll('[data-scroll-to]')
         let elementToScroll = document.body
         let elementToScrollTo
@@ -48,28 +48,34 @@
             else
                 elementToScrollTo = document.querySelector(`#${link.dataset.scrollTo}`).offsetTop
 
-            console.log(elementToScrollTo)
             link.addEventListener('click', function () {
                 scrollTo(elementToScroll, elementToScrollTo, 500)
             })
         })
+    }
 
+    function addProjectEvents () {
         let projects = document.querySelectorAll('[data-project-src]')
         let projectShowcase = document.querySelector('#project-showcase')
         let myDescription = document.querySelector('#my-description')
 
         projects.forEach(function (project) {
             project.addEventListener('click', function () {
-                let url = `${location.origin}/projects/${project.dataset.projectSrc}`
-                console.log(url)
+                let url = `./projects/${project.dataset.projectSrc}`
                 myDescription.style.display = 'none'
                 projectShowcase.src = url
             })
         })
+    }
+
+    function init () {
+        addInnerLinksEvents()
+        addProjectEvents()
 
         resize()
+        window.onresize = resize
     }
 
     window.onload = init
-    window.onresize = resize
+    
 })()
