@@ -27,12 +27,19 @@
     }
 
     function init () {
-        let innerLinks = document.querySelectorAll('[data-scroll-top]')
-        let elementToScrollTo = document.body
+        let innerLinks = document.querySelectorAll('[data-scroll-to]')
+        let elementToScroll = document.body
+        let elementToScrollTo
         
         innerLinks.forEach(function (link) {
+            if (link.dataset.scrollTo.length === 0)
+                elementToScrollTo = 0
+            else
+                elementToScrollTo = document.querySelector(`#${link.dataset.scrollTo}`).offsetTop
+
+            console.log(elementToScrollTo)
             link.addEventListener('click', function () {
-                scrollTo(elementToScrollTo, 0, 500)
+                scrollTo(elementToScroll, elementToScrollTo, 500)
             })
         })
 
