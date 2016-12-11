@@ -24,4 +24,8 @@
     .hero__title {
         font-size: 15vh;
     }
+
+    .hero__description {
+        padding: 0 1rem;
+    }
 }
