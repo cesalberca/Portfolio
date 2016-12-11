@@ -5,6 +5,13 @@ html {
     line-height: 32px;
 }
 
+@media (max-width: 600px) {
+    html {
+        font-size: 16px;
+        line-height: 30px;
+    }
+}
+
 body {
     font-family: 'Montserrat', sans-serif;
     font-size: 1rem;
