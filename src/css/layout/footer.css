@@ -1,3 +1,4 @@
 .footer {
-    background-color: var(--dark-color);
+    max-width: var(--container-width);
+    margin: 2rem auto;
 }
