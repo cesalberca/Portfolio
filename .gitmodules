@@ -1,0 +1,12 @@
+[submodule "projects/DailyPlanner"]
+	path = projects/DailyPlanner
+	url = https://github.com/cesalberca/DailyPlanner.git
+[submodule "projects/Arkanoid"]
+	path = projects/Arkanoid
+	url = https://github.com/cesalberca/Arkanoid
+[submodule "projects/star-generator"]
+	path = projects/star-generator
+	url = https://github.com/cesalberca/star-generator
+[submodule "projects/blog-ciencia"]
+	path = projects/blog-ciencia
+	url = https://github.com/cesalberca/blog-ciencia
